@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-h=%r5lwt4fx8*wu0erzb#2+rrciu3#8v(2f&emxf5&mx-=tshs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://moods-backend-c90m.onrender.com/']
+ALLOWED_HOSTS = ["moods-backend-c90m.onrender.com", "localhost", "127.0.0.1"]
 
 
 # Application definition

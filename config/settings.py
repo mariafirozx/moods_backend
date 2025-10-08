@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h=%r5lwt4fx8*wu0erzb#2+rrciu3#8v(2f&emxf5&mx-=tshs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://moods-backend-c90m.onrender.com/']
 
 
 # Application definition

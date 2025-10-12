@@ -18,13 +18,17 @@ from django.contrib import admin
 from django.urls import path
 from moods_api.views import process_input
 from django.views.generic import TemplateView
+from django.http import JsonResponse
+
+def home(request):
+    return JsonResponse({"message": "Backend is running!"})
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     # path('', TemplateView.as_view(template_name='index.html'), name='index'),
     path('admin/', admin.site.urls),
     path('api/process_input/', process_input, name='process_input'),  # Add this line for the process_input view
-    
+    path('', home, name='home')
 
     # path('api/process_input/', process_input, name='process_input'),
     # path('', home, name='home'),  # Add this line for the home page

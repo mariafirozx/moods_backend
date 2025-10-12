@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React dev server
+    "https://moodsmovie.netlify.app/" #deployed webapp
 ]
 
 MIDDLEWARE = [

@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React dev server
-    "https://moodsmovie.netlify.app/" #deployed webapp
+    "https://moodsmovie.netlify.app", #deployed webapp
 ]
 
 MIDDLEWARE = [
@@ -131,7 +131,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, '../moods/build/static')]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, '../moods/build/static')]
 
 if not DEBUG:
 

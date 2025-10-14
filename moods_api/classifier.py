@@ -21,7 +21,7 @@ _classifier = None
 def text_classify(text: str):
     global _classifier
     if _classifier is None:
-       _classifier = pipeline("text-classification",model='bhadresh-savani/distilbert-base-uncased-emotion', return_all_scores=True)
+       _classifier = pipeline("text-classification",model='bhadresh-savani/distilbert-base-uncased-emotion', return_all_scores=True, low_cpu_mem_usage=True)
     res = _classifier(text)
        
 

@@ -34,12 +34,10 @@
 
 ##using hugging face API interference
 
-#hugging face API token -> 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
 
 import os;
 import requests;
 
-# HF_TOKEN = ' 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'
 
 
 API_URL = "https://router.huggingface.co/hf-inference/models/j-hartmann/emotion-english-distilroberta-base"

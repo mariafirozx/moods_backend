@@ -40,7 +40,7 @@ import os;
 import requests;
 
 API_URL = "https://router.huggingface.co/hf-inference/models/j-hartmann/emotion-english-distilroberta-base"
-headers = {"Authorization": f"Bearer {os.environ['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']}"} 
+headers = {"Authorization": f"Bearer {os.environ['HF_TOKEN']}"} 
 
 def text_classify(text:str):
     res = requests.post(API_URL, headers=headers, json={"inputs": text})
